@@ -590,9 +590,10 @@
                                        sleep(2000);
                                        //put down wobble
 
+                                       turnDistanceTwo(powerTwo, 16);
 
 
-                                       driveBackwardDistance(powerTwo, 30);
+                                       driveBackwardDistance(powerTwo, 50);
 
                                        //drive left
                                        turnLeftDistance(powerTwo, 26);
