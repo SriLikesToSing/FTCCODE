@@ -579,7 +579,6 @@
 
                                        turnDistance(powerTwo, 16);
 
-                                       driveForwardDistance(powerTwo, 10);
                                        sleep(300);
                                        robot.wobble.setPower(-0.4);
                                        sleep(700);
@@ -591,9 +590,9 @@
                                        sleep(2000);
                                        //put down wobble
 
-                                        /*
 
-                                       driveBackwardDistance(powerTwo, 20);
+
+                                       driveBackwardDistance(powerTwo, 30);
 
                                        //drive left
                                        turnLeftDistance(powerTwo, 26);
@@ -678,7 +677,7 @@
                                        sleep(3000);
                                        driveForwardDistance(powerOne, 2);
                                        STOPPER = true;
-                                        */
+
                                    }
                                }
                                telemetry.update();
