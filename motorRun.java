@@ -101,6 +101,7 @@ public class motorRun extends LinearOpMode {
             boolean rightBumper = gamepad2.right_bumper;
 
 
+
             //boolean stopShoot = gamepad1.left_bumper;
             //boolean intake = gamepad1.left_bumper;
 
@@ -134,16 +135,18 @@ public class motorRun extends LinearOpMode {
 
 
             if(shoot>=0.5){
-                    robot.shooter.setPower(-0.65);
+                    robot.shooter.setPower(-0.60);
+                    robot.shooterServo.setPosition(0);
                     //robot.sucker.setPower(-1);
 
                 }else if(shoot<0.5){
                     robot.shooter.setPower(0);
+                    robot.shooterServo.setPosition(0.5);
                    // robot.sucker.setPower(0);
                 }
 
                 if(intake>=0.5){
-                    robot.intaker.setPower(1);
+                    robot.intaker.setPower(0.6);
                     robot.sucker.setPower(-1);
                 }else if(intake<0.5){
                     robot.intaker.setPower(0);
